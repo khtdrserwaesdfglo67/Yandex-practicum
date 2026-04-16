@@ -1,0 +1,11 @@
+:root {
+  --main-font-family: 'Open Sans';
+  --main-text-size: clamp(0.875rem, 0.7679rem + 0.4762vw, 1.125rem);
+  --bg-color: #f2f2f2;
+  --text-color: #000;
+  --article-bg-color: #6dc1fd;
+  --author-bg-color: #1e1e1e;
+  --author-text-color: #fff;
+  --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
+  --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
+}
