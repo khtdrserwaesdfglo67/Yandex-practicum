@@ -3,56 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тёмная тема на CSS-переменных</title>
+    <title>Адаптивный лэйаут без @media</title>
     <link
       rel="stylesheet"
       href="https://code.s3.yandex.net/web-code/fonts/fonts.css"
     />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/theme-dark.css" />
-    <script src="./scripts/theme.js"></script>
   </head>
   <body>
-    <nav class="theme-controller">
-      <ul class="theme-controller__list">
-        <li>
-          <button class="theme-button theme-button_theme_light">Светло</button>
-        </li>
-        <li>
-          <button class="theme-button theme-button_theme_dark">Темно</button>
-        </li>
-      </ul>
-    </nav>
-    <article class="article">
-      <h2 class="article__title">Я не то что схожу с ума, но устал за лето…</h2>
-      <pre>
-Я не то что схожу с ума, но устал за лето.
-За рубашкой в комод полезешь, и день потерян.
-Поскорей бы, что ли, пришла зима и занесла всё это —
-города, человеков, но для начала зелень.
-Стану спать не раздевшись или читать с любого
-места чужую книгу, покамест остатки года,
-как собака, сбежавшая от слепого,
-переходят в положенном месте асфальт. Свобода —
-это когда забываешь отчество у тирана,
-а слюна во рту слаще халвы Шираза,
-и, хотя твой мозг перекручен, как рог барана,
-ничего не каплет из голубого глаза.
-    </pre
-      >
-    </article>
-    <article class="author-card">
-      <img src="./images/brodsky.jpg" alt="" class="author-card__image" />
-      <div class="author-card__description">
-        <h2 class="author-card__title">Иосиф Бродский</h2>
-        <p class="author-card__text">
-          Иосиф Александрович Бродский — русский и американский поэт, эссеист,
-          драматург, переводчик, педагог. Лауреат Нобелевской премии по
-          литературе 1987 года, поэт-лауреат США в 1991—1992 годах. Стихи писал
-          преимущественно на русском языке, эссеистику — на английском.
-        </p>
-      </div>
-    </article>
+    <ul class="cards-list">
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/egor.jpg"
+            alt="Фото Егора Летова, смотрящего на солнце в тёмных очках"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Егор Летов</h2>
+            <p class="card__paragraph">Он увидел солнце</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/sergeykurehin.jpg"
+            alt="Фото Сергея Курёхина в мундире"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Сергей Курёхин</h2>
+            <p class="card__paragraph">Атаковал бром хромом</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/mamonov.jpg"
+            alt="Фото молодого Петра Мамонова, протирающего электрогитару"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Пётр Мамонов</h2>
+            <p class="card__paragraph">Зато он умел летать</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/bg.jpg"
+            alt="Фотопортрет Бориса Гребенщикова"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Борис Гребенщиков</h2>
+            <p class="card__paragraph">Не на что больше жать</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/fedorov.jpg"
+            alt="Фото Леонида Фёдорова за компьютером"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Леонид Фёдоров</h2>
+            <p class="card__paragraph">Летел и таял</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/chistyakov.jpg"
+            alt="Фото Фёдора Чистякова с баяном"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Фёдор Чистяков</h2>
+            <p class="card__paragraph">Ехал сквозь снежную равнину</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/tsoy.jpg"
+            alt="Фотопортрет Виктора Цоя"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Виктор Цой</h2>
+            <p class="card__paragraph">Смотрел в чужое небо из чужого окна</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/naumenko.jpg"
+            alt="Фото Майка Науменко с гитарой"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Майк Науменко</h2>
+            <p class="card__paragraph">Знал, что нужно звезде рок-н-ролла</p>
+          </div>
+        </article>
+      </li>
+      <li class="cards-list__item">
+        <article class="card">
+          <img
+            src="./images/sashbash.jpg"
+            alt="Фотопортрет Александра Башлачева"
+            class="card__image"
+          />
+          <div class="card__description">
+            <h2 class="card__title">Александр Башлачёв</h2>
+            <p class="card__paragraph">Ничего не хотел хотеть</p>
+          </div>
+        </article>
+      </li>
+    </ul>
   </body>
 </html>
