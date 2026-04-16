@@ -1,0 +1,62 @@
+html {
+  block-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-inline-size: 360px;
+  min-block-size: 100%;
+  margin: 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.article {
+  inline-size: 60%;
+  margin: auto;
+  padding: 2em;
+  background-color: #5f0dee;
+}
+
+.article__image {
+  inline-size: 260px;
+  border-radius: 0;
+}
+
+.quote {
+  margin: 0;
+}
+
+.quote__title {
+  margin-block-end: 20px;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.quote__text {
+  margin-block-end: 8px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.quote__author {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (width <= 768px) {
+  .article {
+    inline-size: 100%;
+  }
+}
