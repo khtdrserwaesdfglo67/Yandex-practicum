@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Проценты с изображениями и отступами</title>
+    <title>CSS-переменные</title>
     <link
       rel="stylesheet"
       href="https://code.s3.yandex.net/web-code/fonts/fonts.css"
@@ -11,20 +11,139 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <article class="article">
+    <header class="header grid-container">
+      <h1 class="header__slogan grid-item">научиться учиться</h1>
       <img
-        class="article__image"
-        src="./images/who.jpg"
-        atl="Портрет Питера Капальди в роли Доктора Кто"
+        src="./svg/logo.svg"
+        alt="Логотип, схематичное изображение робота читающего книгу"
+        class="header__logo grid-item"
       />
-      <blockquote class="quote">
-        <h2 class="quote__title">Цитата дня</h2>
-        <p class="quote__text">
-          Иногда у вас есть только один плохой выбор, но вам всё равно придется
-          выбирать.
-        </p>
-        <cite class="quote__author">Доктор Кто</cite>
-      </blockquote>
-    </article>
+      <nav class="menu grid-item">
+        <ul class="menu__list">
+          <li><a href="#hero" class="menu__link">О Барбаре</a></li>
+          <li><a href="#principles" class="menu__link">Принципы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="hero" class="hero grid-container">
+        <img
+          src="./images/oakley.jpg"
+          alt="Фото Барбары Окли во время лекции"
+          class="hero__banner grid-item"
+        />
+        <div class="hero__spoiler grid-item">
+          <h2>Барбара Окли</h2>
+          <p>
+            Барбара Окли — профессор инженерии, автор научно-популярной
+            литературы и создатель массовых открытых онлайн-курсов. Заработала
+            свою репутаций образовательного инноватора благодаря сильному
+            акценту на принципы и подходы к обучению, которые в значительной
+            степени базируются на нейронауке и психологии.
+          </p>
+          <a
+            href="https://www.coursera.org/learn/learning-how-to-learn"
+            target="_blank"
+            class="button hero__link"
+            >Курс Барбары</a
+          >
+        </div>
+      </section>
+      <section class="content grid-container">
+        <aside class="navigation grid-item">
+          <nav class="navigation__menu">
+            <ul class="navigation__list grid-container">
+              <li>
+                <a href="#brain" class="button navigation__link grid-item"
+                  >мозг&nbsp;—&nbsp;мускул</a
+                >
+              </li>
+              <li>
+                <a href="#repeat" class="button navigation__link grid-item"
+                  >повторение</a
+                >
+              </li>
+              <li>
+                <a href="#abstraction" class="button navigation__link grid-item"
+                  >отвлечение</a
+                >
+              </li>
+              <li>
+                <a href="#analogue" class="button navigation__link grid-item"
+                  >аналогии</a
+                >
+              </li>
+              <li>
+                <a href="#inclusion" class="button navigation__link grid-item"
+                  >вовлечение</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <div id="principles" class="text grid-item">
+          <h3 id="brain">Принцип «мозг — мускул»</h3>
+          <p>
+            Окли включает в свое образовательное мышление идею «мозг — это
+            мускул», подразумевающий, что также, как и мускулы тела нуждаются в
+            регулярном тренировках с постепенныным увеличением нагрузки для
+            развития и укрепления, так и мозг требует регулярной «физической»
+            нагрузки в форме умственной деятельности и интеллектуальных вызовов.
+          </p>
+          <h3 id="repeat">Принцип важности повторения</h3>
+          <p>
+            Окли подчеркивает важность повторения в процессе обучения. Она
+            отмечает, что нейроны в мозге формируют новые связи в процессе
+            обучения новому материалу, но чтобы эти связи были устойчивыми,
+            нужно постоянно "прокачивать" их, повторно проходя материал. Это
+            принцип применяется в практике через регулярный обзор и повторение
+            учебных материалов.
+          </p>
+          <h3 id="abstraction">Принцип отвлечения</h3>
+          <p>
+            Окли утверждает, что перерывы в обучении также важны, как и само
+            обучение. Она представляет модель обучения, которая включает в себя
+            периоды активного обучения, чередующиеся с временем для отдыха и
+            "переваривания" новой информации. Этот подход поддерживается
+            исследованиями, показывающими, что встроенные перерывы в процессе
+            обучения могут улучшить долгосрочное запоминание информации.
+          </p>
+          <h3 id="analogue">Принцип использования аналогий и метафор</h3>
+          <p>
+            Окли использует аналогии и метафоры, чтобы помочь учащимся понять
+            сложные понятия или идеи. Она утверждает, что эта тактика подключает
+            уже существующие знания учащегося и использует их как "мост" для
+            понимания нового материала.
+          </p>
+          <h3 id="inclusion">Принцип активного вовлечения</h3>
+          <p>
+            Окли выступает за активное вовлечение учеников в процесс обучения.
+            Вместо пассивного приема информации она рекомендует использовать
+            методы активного обучения, такие как самостоятельное решение
+            проблем, участие в обсуждениях, проведение исследований и т.д.
+          </p>
+          <p>
+            Принципы обучения Барбары Окли отражают уважение к нейронаукам и
+            психологии обучения. Она акцентирует внимание на том, что обучение —
+            это не только процесс усвоения новой информации, но и процесс
+            активного взаимодействия мозга с этой информацией.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer grid-container">
+      <p class="footer__copyright grid-item">VЁRSTKA</p>
+      <nav class="footer__menu grid-item">
+        <ul class="footer__list">
+          <li><a href="#hero" class="footer__link">О Барбаре</a></li>
+          <li><a href="#principles" class="footer__link">Принципы</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__social grid-item">
+        <li><a href="#" class="footer__link">Свиттер</a></li>
+        <li><a href="#" class="footer__link">Лицокнига</a></li>
+        <li><a href="#" class="footer__link">Парарам</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
