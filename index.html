@@ -3,132 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Адаптивный лэйаут без @media</title>
+    <title>Медиазапросы</title>
     <link
       rel="stylesheet"
       href="https://code.s3.yandex.net/web-code/fonts/fonts.css"
     />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/form-defaults.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <ul class="cards-list">
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/egor.jpg"
-            alt="Фото Егора Летова, смотрящего на солнце в тёмных очках"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Егор Летов</h2>
-            <p class="card__paragraph">Он увидел солнце</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/sergeykurehin.jpg"
-            alt="Фото Сергея Курёхина в мундире"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Сергей Курёхин</h2>
-            <p class="card__paragraph">Атаковал бром хромом</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/mamonov.jpg"
-            alt="Фото молодого Петра Мамонова, протирающего электрогитару"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Пётр Мамонов</h2>
-            <p class="card__paragraph">Зато он умел летать</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/bg.jpg"
-            alt="Фотопортрет Бориса Гребенщикова"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Борис Гребенщиков</h2>
-            <p class="card__paragraph">Не на что больше жать</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/fedorov.jpg"
-            alt="Фото Леонида Фёдорова за компьютером"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Леонид Фёдоров</h2>
-            <p class="card__paragraph">Летел и таял</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/chistyakov.jpg"
-            alt="Фото Фёдора Чистякова с баяном"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Фёдор Чистяков</h2>
-            <p class="card__paragraph">Ехал сквозь снежную равнину</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/tsoy.jpg"
-            alt="Фотопортрет Виктора Цоя"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Виктор Цой</h2>
-            <p class="card__paragraph">Смотрел в чужое небо из чужого окна</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/naumenko.jpg"
-            alt="Фото Майка Науменко с гитарой"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Майк Науменко</h2>
-            <p class="card__paragraph">Знал, что нужно звезде рок-н-ролла</p>
-          </div>
-        </article>
-      </li>
-      <li class="cards-list__item">
-        <article class="card">
-          <img
-            src="./images/sashbash.jpg"
-            alt="Фотопортрет Александра Башлачева"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Александр Башлачёв</h2>
-            <p class="card__paragraph">Ничего не хотел хотеть</p>
-          </div>
-        </article>
-      </li>
-    </ul>
+    <form class="form">
+      <label class="input-component input-component_type_text">
+        <span>Имя</span>
+        <input type="text" name="name" />
+      </label>
+      <label class="input-component input-component_type_email">
+        <span>Email</span>
+        <input type="email" id="email" name="email" />
+      </label>
+      <label class="input-component input-component_type_tel">
+        <span>Телефон</span>
+        <input type="tel" name="phone" />
+      </label>
+      <label class="input-component input-component_type_textarea">
+        <span>Сообщение</span>
+        <textarea name="message"></textarea>
+      </label>
+      <button class="form-submit-button" type="submit">Отправить</button>
+    </form>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
