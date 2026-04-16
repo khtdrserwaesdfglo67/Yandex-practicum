@@ -6,109 +6,61 @@
 
 body {
   display: grid;
-  gap: 40px;
+  place-items: center;
+  gap: 2em;
   min-block-size: 100dvb;
   margin: 0;
-  padding: 40px;
-  color: var(--text-color);
   font-family: var(--main-font-family), sans-serif;
   font-size: var(--main-text-size, 18px);
-  background-color: var(--bg-color);
+  background-color: #fff;
+  background-image: var(--bg-pattern);
 }
 
-h1,
-h2,
-h3,
-p,
-pre {
-  margin: 0;
-  padding: 0;
-}
+.filter-form {
+  display: grid;
 
-pre {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.theme-controller {
-  position: fixed;
-  inset-block-start: 1em;
-  inset-inline-end: 1em;
-}
-
-.theme-controller__list {
-  display: flex;
+  /* Здесь нужны стили для оформления колонок */
   gap: 0.5em;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  inline-size: 95%;
+  border: 1px solid #000;
+  padding: 1em;
+  background-color: #80d994;
 }
 
-.theme-button {
-  border: 1px solid currentColor;
-  padding: 0.5em 1em;
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  background-color: var(--bg-color);
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox {
+  display: block;
   cursor: pointer;
 }
 
-.theme-button:hover {
-  color: var(--bg-color);
-  background-color: var(--text-color);
-}
-
-.theme-button:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.article {
-  inline-size: 60%;
-  margin: auto;
-  padding: 2em;
-  background-color: var(--article-bg-color);
-}
-
-.article__title {
-  margin-block-end: 20px;
-}
-
-.author-card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-  inline-size: 60%;
-  margin: auto;
-  padding: 20px;
-  color: var(--author-text-color);
-  background-color: var(--author-bg-color);
-}
-
-.author-card__image {
-  inline-size: 200px;
-  block-size: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.author-card__description {
-  flex-grow: 1;
-  flex-basis: 400px;
-}
-
-.author-card__title {
-  margin-block-end: 31px;
-  font-size: 31px;
+.checkbox__hashtag {
+  display: block;
+  border: 1px solid var(--black);
+  padding: 10px 65px;
+  opacity: 0.6;
+  color: var(--black);
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-align: center;
   text-transform: uppercase;
+  background-color: var(--yellow);
 }
 
-@media (width <= 768px) {
-  .article,
-  .author-card {
-    inline-size: 95%;
-  }
+.checkbox__input:checked + .checkbox__hashtag {
+  opacity: 1;
+}
+
+.checkbox__input:focus-visible + .checkbox__hashtag {
+  outline: 1px solid var(--black);
 }
