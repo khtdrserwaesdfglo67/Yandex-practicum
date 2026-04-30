@@ -91,3 +91,9 @@ ul {
     grid-column: 1;
   }
 }
+@container (inline-size >= 400px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
