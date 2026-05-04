@@ -1,0 +1,7 @@
+.paragraph {
+  font-size: inherit;
+}
+
+.paragraph:not(:last-child) {
+  margin-block-end: 1em;
+}

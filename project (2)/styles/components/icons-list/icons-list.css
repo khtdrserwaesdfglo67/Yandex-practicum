@@ -1,0 +1,34 @@
+.icons-list {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  inline-size: 100%;
+}
+
+.icons-list__item {
+  inline-size: 100%;
+  border: 2px solid currentColor;
+}
+
+.icons-list__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.icons-list__link:hover {
+  text-decoration: none;
+  background-color: var(--icons-list-link-hover-background-color, #80d994);
+}
+
+.icons-list__image {
+  inline-size: 30%;
+}
+
+.icons-list__text {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}

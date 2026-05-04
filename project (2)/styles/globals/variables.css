@@ -1,0 +1,17 @@
+:root {
+  --main-font: 'PT Sans';
+  --menu-toggle-size: 40px;
+  --section-padding: 20px 10px;
+  --main-font-size: 18px;
+  --menu-background-color: #80d994;
+  --menu-link-hover-background-color: #fff;
+  --hero-bg-image-url: url(../../../images/hero-bg.jpg);
+  --hero-text-color: #fff;
+  --subscribe-form-background-color: #feafe8;
+  --subscribe-form-color: #000;
+  --subscribe-form-button-bg-color: #80d994;
+  --text-container-bg-color: #fff;
+  --text-container-text-color: #000;
+  --icons-list-link-hover-background-color: #80d994;
+  --internal-padding: 40px 20px;
+}

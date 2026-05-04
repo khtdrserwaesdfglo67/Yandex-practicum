@@ -1,0 +1,12 @@
+.logo {
+  display: block;
+  max-inline-size: 200px;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo img {
+  inline-size: 100%;
+}

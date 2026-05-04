@@ -1,0 +1,12 @@
+.text-container {
+  border: 2px solid currentColor;
+  padding: var(--internal-padding, 40px 20px);
+  color: var(--text-container-text-color, #000);
+  background-color: var(--text-container-bg-color, #fff);
+}
+
+.text-container__title {
+  margin-block-end: 0.2em;
+  font-size: 31px;
+  text-transform: uppercase;
+}

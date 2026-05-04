@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Компоненты</title>
+    <link rel="stylesheet" href="./styles/globals/globals.css" />
+    <link rel="stylesheet" href="./styles/globals/variables.css" />
+    <link rel="stylesheet" href="./styles/layout/components.css" />
+    <link rel="stylesheet" href="./styles/components/logo/logo.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/components/section-title/section-title.css"
+    />
+    <link rel="stylesheet" href="./styles/components/menu/menu.css" />
+    <link rel="stylesheet" href="./styles/components/hero/hero.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/components/subscribe-form/subscribe-form.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/components/text-container/text-container.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/components/icons-list/icons-list.css"
+    />
+  </head>
+  <body>
+    <a href="#" class="logo">
+      <img src="./svg/logo.svg" alt="Логотип" class="logo__image" />
+    </a>
+    <nav class="menu">
+      <button
+        class="menu__toggle"
+        onclick="this.classList.toggle('menu__toggle_is-opened')"
+        type="button"
+      >
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="./index.html" class="menu__list-link">Страница</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="./components.html" class="menu__list-link">Компоненты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">На рубеже дизайна и разработки</h1>
+      <p class="hero__text">
+        Курс по вёрстке — отличное начало работы с веб-технологиями. Вы
+        чувствуете, как дизайн превращается в компоненты, а компоненты — в
+        страницы.
+      </p>
+      <button class="hero__button" type="button">Начать учиться</button>
+    </div>
+
+    <form class="subscribe-form">
+      <h2 class="subscribe-form__title">Оставьте контакты</h2>
+      <label class="subscribe-form__label" for="email">
+        <span class="visually-hidden">Ваш e-mail</span>
+        <input
+          class="subscribe-form__input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+        />
+      </label>
+      <button type="submit" class="subscribe-form__button" type="submit">
+        Отправить
+      </button>
+      <p class="subscribe-form__agreement-text">
+        Нажимая кнопку, вы соглашаетесь на обработку данных
+      </p>
+    </form>
+
+    <div class="text-container">
+      <h2 class="text-container__title">Чему вы научитесь</h2>
+      <p class="text-container__text">
+        На курсе вы шаг за шагом погружаетесь в мир разработки интерфейса при
+        помощи кода на HTML и CSS. Этот путь ведёт вас сквозь особенности работы
+        браузеров, принципы и подходы в дизайне, тонкости воплощения
+        дизайнерских идей на страницах веб-сайтов.
+      </p>
+    </div>
+
+    <h2 class="section-title">Заголовок секции</h2>
+
+    <ul class="icons-list">
+      <li class="icons-list__item">
+        <a href="#" class="icons-list__link">
+          <img
+            src="./svg/theory.svg"
+            aria-hidden="true"
+            alt=""
+            class="icons-list__image"
+          />
+          <p class="icons-list__text">Теория</p>
+        </a>
+      </li>
+      <li class="icons-list__item">
+        <a href="#" class="icons-list__link">
+          <img
+            src="./svg/trainer.svg"
+            aria-hidden="true"
+            alt=""
+            class="icons-list__image"
+          />
+          <p class="icons-list__text">Тренажер</p>
+        </a>
+      </li>
+      <li class="icons-list__item">
+        <a href="#" class="icons-list__link">
+          <img
+            src="./svg/support.svg"
+            aria-hidden="true"
+            alt=""
+            class="icons-list__image"
+          />
+          <p class="icons-list__text">Поддержка</p>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
